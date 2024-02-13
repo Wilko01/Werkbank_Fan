@@ -19,22 +19,16 @@ The ESP32 is running ESPHOME and connected to Home Assistant.
 
 
 
-### Parts
+### Parts All below this line NEEDS updating vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 1 x ESP32
 
 <img src="Images/ESP32 wroom 32D.jpg" alt="drawing" width="400"/>
 
-1 x DHT22 or AM2302
-
-<img src="Images/DHT22-Sensor-Pinout.jpg" alt="drawing" width="300"/>
 
 1 x DHT22 or AM2302 vs DHT11
 
 <img src="Images/DHT11 vs DHT22.jpg" alt="drawing" width="500"/>
 
-2 x Reed contact
-
-<img src="Images/Reed contact.jpg" alt="drawing" width="200"/>
 
 1 x Fan NO NF-S12B 1200P Noctua NF-S12B redux-1200 PWM, 120mm
 
