@@ -15,7 +15,7 @@ The EC12 rotary push button is split into 3 connections to the ESP. All 3 have a
 A TM1637 indicates the RPM of the fan in %.
 The PWM fan is controlled via the PWM signal coming from the ESP32. A 180Ohm resistor is placed between the GPIO and the PWM connection of the fan. The tacho signal needs a pull up to 3.3V. This could be higher, but the ESP will not accept higher voltages. In practice the 3,3V seems sufficient.
 The ESP32 is running ESPHOME and connected to Home Assistant. 
-
+The green and blue LEDs are each connected via a 330Ohm resistor to reduce the max current to 10mA. The red LED is connected via a 220Ohm resistor. All LEDs are configured via a PWM signal. Simply because the ESP has sufficient PWM outputs and this way the light intensity can be controlled.
 
 
 
