@@ -70,14 +70,14 @@ sensor:
 
   - platform: dht
     pin: GPIO27
+    model: DHT11
     temperature:
       name: "Werkbank-Temperature"
-      id: th13_temp
+      id: th14_temp
     humidity:
       name: "Werkbank-Humidity"
-      id: th13_humidity
-    model: AM2302
-    update_interval: 120s
+      id: th14_humidity
+    update_interval: 10s
 
 #https://esphome.io/components/sensor/rotary_encoder.html
   - platform: rotary_encoder
