@@ -33,11 +33,11 @@ A (virtual) switch is configured in ESPHome and used as override switch. The swi
 
 1 x Fan NF-F12 iPPC-24V-3000 SP IP67 PWM, 120mm
 
-<img src="Images/NF-S12B-1200P_01.jpg" alt="drawing" width="200"/>
+<img src="Images/nf_f12_ippc_24v_3000_sp_ip6_pwm.jpg" alt="drawing" width="200"/>
 
 Fan pinout pinout
 
-<img src="Images/nf_f12_ippc_24v_3000_sp_ip6_pwm.jpg" alt="drawing" width="300"/>
+<img src="Images/Noctua fan PWM pinout.jpg" alt="drawing" width="300"/>
 
 1 x Mini360 DC- DC buck converter
 
@@ -49,7 +49,7 @@ Fan pinout pinout
 
 1 x EC12 Rotary encoder
 
-<img src="Images/EC12 Rotary encoder.jpg" alt="drawing" width="200"/>
+<img src="Images/EC12 rotary encoder.jpg" alt="drawing" width="200"/>
 
 1 x Push button
 
