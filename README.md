@@ -28,12 +28,12 @@ A (virtual) switch is configured in ESPHome and used as override switch. The swi
 
 1 x DHT11
 
-<img src="Images/DHT11.jpg" alt="drawing" width="500"/>
+<img src="Images/DHT11.jpg" alt="drawing" width="200"/>
 
 
 1 x Fan NF-F12 iPPC-24V-3000 SP IP67 PWM, 120mm
 
-<img src="Images/nf_f12_ippc_24v_3000_sp_ip6_pwm.jpg" alt="drawing" width="200"/>
+<img src="Images/nf_f12_ippc_24v_3000_sp_ip6_pwm.jpg" alt="drawing" width="400"/>
 
 Fan pinout pinout
 
@@ -70,7 +70,7 @@ LEDs 3mm
 1 x 24V DC adapter
 
 ### Schematic overview
-<img src="Images/Schematic_overview.jpg" alt="drawing" width="700"/>
+<img src="Images/Schematic_overview.jpg" alt="drawing" width="800"/>
  
 
 Note:
@@ -82,3 +82,7 @@ Note:
 Create a new ESPHOME device with this code:
 ### Code
 [Code in ESPHOME](code.vbs)
+
+
+## Open points
+The state of the swtiches will nicely be updated when a button is pressed on the ESP. What is not working is the updating of the LED status en RPM % at which the fan runs when controlled locally. I could not yet figure out how to solve the information flow from the ESP to Home Assistant for the LEDs and the RPM of the fan.
