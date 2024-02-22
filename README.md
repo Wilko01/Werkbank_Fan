@@ -11,7 +11,7 @@ In remote mode the fan is turned on when a certain humidity is detected and turn
  ## Technical description
 A 24V IP65 fan is used as this has a high air volume movement. The 24 voltage is reduced by a mini 360 DC-DC converter to fit a decent voltage of about 7V for the ESP. The DC-DC converter is specified for max 23,5V, but I wonder how tollerant this converter will be. A heatsink is used to reduce the heat of the converter. An DHT11 sensor is used for the temperature and humidity. A 4,7kOhm resistor is used as pull up of the DHT11 data signal.
 A NO momentary push button is connected via a 1kOhm resistor to GND. The GPIO is configured as a pull up pin to ensure no false signals.
-The EC12 rotary push button is split into 3 connections to the ESP. All 3 have a 1kOhm resistor where the GPIO pins all are configured with an internal pull up. The push action is separated from the rotary and can be treathed as a momentary push button. The rotary function uses pulses and depending on clockwise or counter clockwise it has phase shifted pulses. 
+The EC11 rotary push button is split into 3 connections to the ESP. All 3 have a 1kOhm resistor where the GPIO pins all are configured with an internal pull up. The push action is separated from the rotary and can be treathed as a momentary push button. The rotary function uses pulses and depending on clockwise or counter clockwise it has phase shifted pulses. 
 A TM1637 indicates the RPM of the fan in %.
 The PWM fan is controlled via the PWM signal coming from the ESP32. A 180Ohm resistor is placed between the GPIO and the PWM connection of the fan. The tacho signal needs a pull up to 3.3V. This could be higher, but the ESP will not accept higher voltages. In practice the 3,3V seems sufficient.
 The ESP32 is running ESPHOME and connected to Home Assistant. 
@@ -47,9 +47,9 @@ Fan pinout pinout
 
 <img src="Images/TM1637.jpg" alt="drawing" width="200"/>
 
-1 x EC12 Rotary encoder
+1 x EC11 Rotary encoder
 
-<img src="Images/EC12 rotary encoder.jpg" alt="drawing" width="200"/>
+<img src="Images/EC11 rotary encoder.jpg" alt="drawing" width="200"/>
 
 1 x Push button
 
