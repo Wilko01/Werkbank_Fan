@@ -89,5 +89,8 @@ Create a new ESPHOME device with this code:
 [Code in ESPHOME](code.vbs)
 
 
+## 3D printer files
+[3D Printer files](3D_Printer_Files)
+
 ## Open points
 The state of the swtiches will nicely be updated when a button is pressed on the ESP. What is not working is the updating of the LED status en RPM % at which the fan runs when controlled locally. I could not yet figure out how to solve the information flow from the ESP to Home Assistant for the LEDs and the RPM of the fan.
