@@ -18,9 +18,13 @@ The ESP32 is running ESPHOME and connected to Home Assistant.
 The green and blue LEDs are each connected via a 330Ohm resistor to reduce the max current to 10mA. The red LED is connected via a 220Ohm resistor. All LEDs are configured via a PWM signal. Simply because the ESP has sufficient PWM outputs and this way the light intensity can be controlled.
 A (virtual) switch is configured in ESPHome and used as override switch. The switch will be made available in HA automatically. A GPIO pin is needed to configure the switch, but is not used at all. Just use any of the unused pins. In the past I used a Helper in HA, but it is way easier to specify an additional switch in ESPHome as the state us then automatically available in the ESP and kept up to date with HA.
 
+<img src="Images/Werkbank fan 01.jpg" alt="drawing" width="400"/>
 
+<img src="Images/Werkbank fan 02.jpg" alt="drawing" width="400"/>
 
-### Parts All below this line NEEDS updating vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+<img src="Images/Werkbank fan 03.jpg" alt="drawing" width="400"/>
+
+### Parts
 1 x ESP32
 
 <img src="Images/ESP32 wroom 32D.jpg" alt="drawing" width="400"/>
@@ -50,6 +54,7 @@ Fan pinout pinout
 1 x EC11 Rotary encoder
 
 <img src="Images/EC11 rotary encoder.jpg" alt="drawing" width="200"/>
+<img src="Images/EC11 pinout.jpg" alt="drawing" width="200"/>
 
 1 x Push button
 

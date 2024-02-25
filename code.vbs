@@ -182,7 +182,7 @@ sensor:
         input: true
         pullup: true
     pin_b: 
-      number: GPIO19
+      number: GPIO17
       inverted: true
       mode:
         input: true
@@ -228,7 +228,7 @@ sensor:
 binary_sensor:
   - platform: gpio
     pin:
-      number: GPIO17
+      number: GPIO19
       mode:
         input: true
         pullup: true
