@@ -18,6 +18,8 @@ The ESP32 is running ESPHOME and connected to Home Assistant.
 The green and blue LEDs are each connected via a 330Ohm resistor to reduce the max current to 10mA. The red LED is connected via a 220Ohm resistor. All LEDs are configured via a PWM signal. Simply because the ESP has sufficient PWM outputs and this way the light intensity can be controlled.
 A (virtual) switch is configured in ESPHome and used as override switch. The switch will be made available in HA automatically. A GPIO pin is needed to configure the switch, but is not used at all. Just use any of the unused pins. In the past I used a Helper in HA, but it is way easier to specify an additional switch in ESPHome as the state us then automatically available in the ESP and kept up to date with HA.
 
+<img src="Images/Werkbank fan 00.jpg" alt="drawing" width="400"/>
+
 <img src="Images/Werkbank fan 01.jpg" alt="drawing" width="400"/>
 
 <img src="Images/Werkbank fan 02.jpg" alt="drawing" width="400"/>
@@ -91,6 +93,16 @@ Create a new ESPHOME device with this code:
 
 ## 3D printer files
 [3D Printer files](3D_Printer_Files)
+
+<img src="Images/Werkbank fan 04.jpg" alt="drawing" width="400"/>
+
+<img src="Images/Werkbank fan 05.jpg" alt="drawing" width="400"/>
+
+<img src="Images/Werkbank fan 06.jpg" alt="drawing" width="400"/>
+
+<img src="Images/Werkbank fan 07.jpg" alt="drawing" width="400"/>
+
+<img src="Images/Werkbank fan 08.jpg" alt="drawing" width="400"/>
 
 ## Open points
 The state of the swtiches will nicely be updated when a button is pressed on the ESP. What is not working is the updating of the LED status en RPM % at which the fan runs when controlled locally. I could not yet figure out how to solve the information flow from the ESP to Home Assistant for the LEDs and the RPM of the fan.
