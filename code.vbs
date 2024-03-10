@@ -72,7 +72,7 @@ switch:
     #- output.turn_on: LED_Mode_Local
     - output.set_level:
         id: LED_Mode_Local
-        level: "10%"   #sets the level of intensity
+        level: "8%"   #sets the level of intensity
     - output.turn_off: LED_Mode_Remote
     on_turn_off:
     - logger.log: "Switch Turned Off!"
@@ -80,7 +80,7 @@ switch:
     #- output.turn_on: LED_Mode_Remote
     - output.set_level:
         id: LED_Mode_Remote
-        level: "10%"
+        level: "8%"
 
 
 #Create a virtual switch to be automatically created in Home Assistant. This solves the issue to create the helper in Home Assistant while I don't know yet how to get the state
@@ -92,7 +92,7 @@ switch:
     #- output.turn_on: LED_Werkbank_Ventilator_Override
     - output.set_level:
         id: LED_Werkbank_Ventilator_Override
-        level: "10%"   #sets the level of intensity
+        level: "8%"   #sets the level of intensity
     on_turn_off:
     - output.turn_off: LED_Werkbank_Ventilator_Override
 
@@ -112,19 +112,19 @@ output:
     frequency: 1000 Hz
     id: pwm_output_fan
 
-#control the Red LED
+#control the Red LED to indicate mode home assistant override
   - platform: ledc
     pin: GPIO13
     frequency: 1000 Hz
     id: LED_Werkbank_Ventilator_Override
     
-#control the Blue LED
+#control the Blue LED to indicate mode local
   - platform: ledc
     pin: GPIO12
     frequency: 1000 Hz
     id: LED_Mode_Local
     
-#control the Green LED
+#control the Green LED to indicate mode remote
   - platform: ledc
     pin: GPIO14
     frequency: 1000 Hz
